@@ -1,0 +1,40 @@
+title: "[강의 W00] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제목은 `[AI Agent W01] 질문 요약`처럼 강의와 주차를 앞에 붙여 주세요.
+        답을 찾으면 도움이 된 댓글을 **Mark as answer**로 채택합니다.
+  - type: dropdown
+    id: course
+    attributes:
+      label: 강의
+      options:
+        - AI Agent
+        - LangChain
+    validations:
+      required: true
+  - type: input
+    id: week
+    attributes:
+      label: 주차
+      placeholder: "1"
+    validations:
+      required: true
+  - type: input
+    id: lecture
+    attributes:
+      label: 강의 위치
+      description: 섹션·강 번호나 타임스탬프
+      placeholder: "섹션 3 · 2강 05:30"
+  - type: textarea
+    id: question
+    attributes:
+      label: 질문
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 시도해 본 것 / 내 생각
+      description: 찾아본 자료, 실습 코드 링크, 추측한 답
